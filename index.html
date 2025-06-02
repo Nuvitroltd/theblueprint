@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blueprint</title>
+   <link rel="stylesheet" href="main.css" />
+   <link href="logo3d-removebg-preview.png" rel="shortcut icon" type="image/x-icon"/>
+        <link href="logo3d-removebg-preview.png" rel="apple-touch-icon"/>
+        
+</head>
+<body>
+
+ <header class="futuristic-header">
+  <div class="logo-3d">
+    <img src="logo3d-removebg-preview.png" alt="THE BLUEPRINT Logo" />
+    <div class="logo-text">
+      <div class="brand-name"><span class="highlight">THE</span> BLUEPRINT</div>
+      <div class="slogan">start small scale strong</div>
+    </div>
+  </div>
+
+  <nav class="futuristic-nav">
+    <a href="#">Home</a>
+    <a href="#aboutus">About</a>
+    <a href="#services">Services</a>
+    <a href="#success">Success</a>
+    <a href="#contactus">Contact</a>
+    <a href="#" class="futuristic-cta">Book Now</a>
+  </nav>
+ 
+</header>
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('.futuristic-nav');
+    nav.classList.toggle('show');
+  }
+</script>
+
+
+<section class="hero">
+  <div class="hero-bg">
+    <video autoplay loop muted playsinline>
+      <source src="video.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="hero-content">
+    <h1>From Idea to Enterprise</h1>
+    <h2>We Build Startups That Scale.</h2>
+    <a href="#">Book Meeting</a>
+  </div>
+</section>
+
+
+
+  <section class="clients">
+  <h3>OUR CLIENTS</h3>
+  <div class="client-logos">
+    <div class="logo-track">
+      <img src="company1logo.png" alt="Client 1" />
+      <img src="company2logo.png" alt="Client 2" />
+      <img src="company3logo.png" alt="Client 3" />
+      <img src="company4logo.png" alt="Client 4" />
+      <img src="company5logo.png" alt="Client 5" />
+      <!-- Repeat for seamless loop -->
+      <img src="company1logo.png" alt="Client 1" />
+      <img src="company2logo.png" alt="Client 2" />
+      <img src="company3logo.png" alt="Client 3" />
+      <img src="company4logo.png" alt="Client 4" />
+      <img src="company5logo.png" alt="Client 5" />
+    </div>
+  </div>
+</section>
+
+<!--Our Services Section-->
+
+
+<!--Our Services Section-->
+<section id="services" class="featured-projects">
+  <div class="section-title text-center">
+    <h2>OUR SERVICES</h2>
+  </div>
+
+  <p>
+    THE BLUEPRINT is a premier startup advisory firm, dedicated to empowering entrepreneurs with actionable strategies, essential documentation, and funding expertise to launch, scale, and sustain successful businesses. Whether you're turning an idea into a structured startup or preparing investor-ready materials, we provide end-to-end solutions that ensure clarity, compliance, and capital readiness.
+  </p>
+
+  <div class="featured-grid">
+    <!-- Service Cards (8 categories) -->
+    <div class="project-card with-icon" data-category="branding">
+      <img src="assets/servicesimages/Branding.jpg" alt="Branding" />
+      <div class="overlay-icon"><a href="#">➜</a></div>
+      <h4>Branding & Identity</h4>
+      <p>Establishes brand ownership and recognition. Prevents unauthorized usage and legal risks.</p>
+    </div>
+
+    <div class="project-card with-icon" data-category="strategy">
+      <img src="assets/servicesimages/strategic.jpg" alt="Strategic Planning" />
+      <div class="overlay-icon"><a href="#">➜</a></div>
+      <h4>Strategic Planning</h4>
+      <p>Aligns teams and attracts value-driven investors. Essential for funding and scalability. Identifies industry gaps and opportunities.</p>
+    </div>
+
+    <div class="project-card with-icon" data-category="finance">
+      <img src="assets/servicesimages/financial.jpg" alt="Financial Operational Planning" />
+      <div class="overlay-icon"><a href="#">➜</a></div>
+      <h4>Financial Operational Planning</h4>
+      <p>Vital for budgeting and investor pitches. Demonstrates business scalability.</p>
+    </div>
+
+    <div class="project-card with-icon" data-category="legal">
+      <img src="assets/servicesimages/Legal.jpg" alt="Legal & Compliance" />
+      <div class="overlay-icon"><a href="#">➜</a></div>
+      <h4>Legal & Compliance</h4>
+      <p>Avoids regulatory fines and enhances trust. Limits liability and prevents disputes. Essential for regulatory approval and funding.</p>
+    </div>
+
+    <div class="project-card with-icon" data-category="investor">
+      <img src="assets/servicesimages/Investor.jpg" alt="Investor Relations" />
+      <div class="overlay-icon"><a href="#">➜</a></div>
+      <h4>Investor Relations</h4>
+      <p>Critical for securing capital efficiently. Enhance confidence and persuasion in pitches.</p>
+    </div>
+
+    <div class="project-card with-icon" data-category="risk">
+      <img src="assets/servicesimages/Risk.jpg" alt="Risk Management & Scalability" />
+      <div class="overlay-icon"><a href="#">➜</a></div>
+      <h4>Risk Management & Scalability</h4>
+      <p>Boosts investor confidence and ensures long-term viability.</p>
+    </div>
+
+    <div class="project-card with-icon" data-category="uxtech">
+      <img src="assets/servicesimages/User.jpg" alt="User Experience & Tech" />
+      <div class="overlay-icon"><a href="#">➜</a></div>
+      <h4>User Experience & Tech</h4>
+      <p>Ensures seamless user experience. Ensures compliance with data privacy laws.</p>
+    </div>
+
+    <div class="project-card with-icon" data-category="ecosystem">
+      <img src="assets/servicesimages/ecosystem.jpg" alt="Strategic Ecosystem Growth" />
+      <div class="overlay-icon"><a href="#">➜</a></div>
+      <h4>Strategic Ecosystem Growth</h4>
+      <p>Enhance clarity for investors, employees, and customers. Ensures sustainable reinvestment.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Popup Modal -->
+<div id="popupModal" class="popup-overlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+  background:rgba(0,0,0,0.7); justify-content:center; align-items:center; z-index:9999;">
+  <div class="popup-content" style="background:#fff; max-width:900px; width:90%; max-height:80vh; overflow-y:auto; padding:20px; position:relative;">
+    <span class="close-btn" style="position:absolute; top:10px; right:15px; font-size:30px; cursor:pointer;">&times;</span>
+
+    <!-- Desktop View Table Layout -->
+    <div id="popupGrid" class="popup-grid desktop-only" style="display:none; 
+      display:grid; 
+      grid-template-columns: repeat(4, 1fr); 
+      gap:10px; 
+      font-family: Arial, sans-serif;">
+      <!-- Dynamic content inserted here -->
+    </div>
+
+    <!-- Mobile View Card Swipe Layout -->
+    <div id="popupCards" class="popup-cards mobile-only" style="display:none; margin-top:10px;">
+      <!-- Dynamic cards inserted here -->
+    </div>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  const data = {
+    branding: [
+      ["Company Name & Logo", "Legal registration and visual identity.", "Establishes brand ownership and recognition.", "Minimum 3 Hours"],
+      ["Branding Guidelines", "Defines logo, colors, and messaging.", "Ensures consistent brand positioning.", "Minimum 5 Hours"],
+      ["Trademark Registration", "Protects brand assets legally.", "Prevents unauthorized usage and legal risks.", "Minimum 20 Hours. Filing fees only"]
+    ],
+    strategy: [
+      ["Business Model Canvas", "Visualize value prop and operations.", "Builds strategic clarity.", "4 Hours"],
+      ["SWOT Analysis", "Identify strengths/weaknesses.", "Informs decision-making.", "3 Hours"],
+      ["Go-to-Market Strategy", "Launch and positioning plan.", "Maximizes market entry success.", "6 Hours"],
+      ["Pitch Deck", "Investor presentation.", "Secures early funding.", "10 Hours"]
+    ],
+    finance: [
+      ["Financial Projections", "Forecasts revenue/expenses.", "Required by investors.", "8 Hours"],
+      ["Break-even Analysis", "Calculate profit thresholds.", "Assesses business viability.", "5 Hours"],
+      ["Cash Flow Statement", "Track money movement.", "Prevents cash shortages.", "6 Hours"],
+      ["CAPEX Plan", "Capital expenditure planning.", "Supports funding needs.", "4 Hours"]
+    ],
+    legal: [
+      ["Incorporation Docs", "Legal formation paperwork.", "Necessary for operation.", "6 Hours"],
+      ["Shareholder Agreement", "Outlines founder roles/ownership.", "Prevents future conflicts.", "8 Hours"],
+      ["Privacy Policy", "Protects user data rights.", "Compliance requirement.", "3 Hours"],
+      ["Terms of Service", "Defines service usage rules.", "Reduces legal liability.", "3 Hours"]
+    ],
+    investor: [
+      ["Investor Pitch", "Summarize opportunity.", "Captures investor interest.", "8 Hours"],
+      ["Capital Table", "Ownership breakdown.", "Transparency in equity.", "4 Hours"],
+      ["Funding Roadmap", "Stages and goals.", "Clarity for investor expectations.", "3 Hours"],
+      ["Due Diligence Pack", "Company details for review.", "Accelerates funding closure.", "10 Hours"]
+    ],
+    risk: [
+      ["Risk Register", "Logs potential business risks.", "Helps mitigation planning.", "3 Hours"],
+      ["Contingency Plan", "Backup plans for disruption.", "Reduces business downtime.", "5 Hours"],
+      ["Insurance Coverage", "Liability and asset protection.", "Prepares for incidents.", "Consultation Based"],
+      ["Scalability Plan", "Structure for growth.", "Sustains long-term operations.", "6 Hours"]
+    ],
+    uxtech: [
+      ["Wireframes", "Low-fidelity screens.", "Foundation for design.", "4 Hours"],
+      ["UI/UX Prototypes", "Interactive demos.", "Improves user experience.", "8 Hours"],
+      ["Tech Stack Plan", "Choose frameworks/tools.", "Supports scalability.", "3 Hours"],
+      ["Privacy Audit", "Check data handling compliance.", "Meets regulatory standards.", "5 Hours"]
+    ],
+    ecosystem: [
+      ["Partner Outreach List", "Identify strategic partners.", "Strengthens ecosystem.", "3 Hours"],
+      ["Ecosystem Map", "Stakeholder landscape view.", "Guides engagement strategy.", "4 Hours"],
+      ["Retention Strategy", "Keep existing users/stakeholders.", "Improves loyalty.", "5 Hours"],
+      ["Reinvestment Plan", "Sustainable business loop.", "Optimizes growth cycles.", "6 Hours"]
+    ]
+  };
+
+  const modal = document.getElementById('popupModal');
+  const popupGrid = document.getElementById('popupGrid');
+  const popupCards = document.getElementById('popupCards');
+  const closeBtn = modal.querySelector('.close-btn');
+
+  const headers = ["Document", "Purpose", "Importance", "Fee/Hour"];
+
+  function clearContent() {
+    popupGrid.innerHTML = '';
+    popupCards.innerHTML = '';
+  }
+
+  function createDesktopTable(categoryData) {
+    // Show grid container
+    popupGrid.style.display = 'grid';
+
+    // Create headers
+    headers.forEach(header => {
+      const headerDiv = document.createElement('div');
+      headerDiv.classList.add('grid-header');
+      headerDiv.style.fontWeight = 'bold';
+      headerDiv.style.borderBottom = '1px solid #ccc';
+      headerDiv.style.paddingBottom = '5px';
+      headerDiv.textContent = header;
+      popupGrid.appendChild(headerDiv);
+    });
+
+    // Add data rows
+    categoryData.forEach(row => {
+      row.forEach(cell => {
+        const cellDiv = document.createElement('div');
+        cellDiv.textContent = cell;
+        cellDiv.style.padding = '8px 5px';
+        cellDiv.style.borderBottom = '1px solid #eee';
+        popupGrid.appendChild(cellDiv);
+      });
+    });
+  }
+
+  function createMobileCards(categoryData) {
+    // Show cards container
+    popupCards.style.display = 'block';
+
+    categoryData.forEach(row => {
+      const card = document.createElement('div');
+      card.classList.add('popup-card');
+      card.style.border = '1px solid #ccc';
+      card.style.borderRadius = '8px';
+      card.style.padding = '15px';
+      card.style.marginBottom = '15px';
+      card.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+      card.style.fontFamily = 'Arial, sans-serif';
+
+      const title = document.createElement('h3');
+      title.textContent = row[0];
+      title.style.marginBottom = '8px';
+      card.appendChild(title);
+
+      const purpose = document.createElement('p');
+      purpose.innerHTML = `<strong>Purpose:</strong> ${row[1]}`;
+      card.appendChild(purpose);
+
+      const importance = document.createElement('p');
+      importance.innerHTML = `<strong>Importance:</strong> ${row[2]}`;
+      card.appendChild(importance);
+
+      const fee = document.createElement('p');
+      fee.innerHTML = `<strong>Fee/Hour:</strong> ${row[3]}`;
+      card.appendChild(fee);
+
+      popupCards.appendChild(card);
+    });
+  }
+
+  // Show modal and populate content for given category
+  function openModal(category) {
+    if (!data[category]) return;
+
+    clearContent();
+
+    // Detect screen width for mobile/desktop toggle
+    if (window.innerWidth <= 768) {
+      // Mobile view
+      popupGrid.style.display = 'none';
+      createMobileCards(data[category]);
+    } else {
+      // Desktop view
+      popupCards.style.display = 'none';
+      createDesktopTable(data[category]);
+    }
+
+    modal.style.display = 'flex';
+  }
+
+  // Open modal on click of project card or arrow icon
+  document.querySelectorAll('.project-card, .overlay-icon a').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      let category;
+      if (el.classList.contains('project-card')) {
+        category = el.dataset.category;
+      } else {
+        // overlay icon click: get closest project-card
+        const card = el.closest('.project-card');
+        if (card) category = card.dataset.category;
+      }
+      if (category) openModal(category);
+    });
+  });
+
+  // Close modal events
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+
+  // Optional: Close modal on ESC key
+  window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+      modal.style.display = 'none';
+    }
+  });
+
+  // Optional: Re-render popup content on window resize if modal is open
+  window.addEventListener('resize', () => {
+    if (modal.style.display === 'flex') {
+      // Get current category from popup content — easiest is to store last category globally
+      // We'll store lastCategory on openModal()
+      if (window.lastCategory) {
+        openModal(window.lastCategory);
+      }
+    }
+  });
+
+  // Store last category to handle resize
+  function openModal(category) {
+    window.lastCategory = category;
+    if (!data[category]) return;
+
+    clearContent();
+
+    if (window.innerWidth <= 768) {
+      popupGrid.style.display = 'none';
+      createMobileCards(data[category]);
+    } else {
+      popupCards.style.display = 'none';
+      createDesktopTable(data[category]);
+    }
+
+    modal.style.display = 'flex';
+  }
+</script>
+
+
+<!--WHy us-->
+<section id="aboutus" class="comparison-section section-spacing remove-up">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="section-title text-center">
+      <h2>Why Blueprint?</h2>
+    </div>
+
+    <div class="down-wrapper_why">
+      <!-- WHO WE HELP -->
+      <div class="why-other">
+        <h2 class="other-header">Who We Help</h2>
+        <div class="other-short">
+          <div class="each-other">
+            <img src="assets/svgfiles/682f109b93571d84f5447e26_check_circle.svg" alt="" class="other-travel_image" />
+            <div class="other-tr-copy">Aspiring Entrepreneurs – Turning ideas into structured startups.</div>
+          </div>
+          <div class="each-other">
+            <img src="assets/svgfiles/682f109b93571d84f5447e26_check_circle.svg" alt="" class="other-travel_image" />
+            <div class="other-tr-copy">Startups Seeking Funding – Preparing investor-ready documentation.</div>
+          </div>
+          <div class="each-other">
+            <img src="assets/svgfiles/682f109b93571d84f5447e26_check_circle.svg" alt="" class="other-travel_image" />
+            <div class="other-tr-copy">Businesses Expanding – Scaling operations, building market strategies, and securing capital.</div>
+          </div>
+          <div class="each-other">
+            <img src="assets/svgfiles/682f109b93571d84f5447e26_check_circle.svg" alt="" class="other-travel_image" />
+            <div class="other-tr-copy">Companies Facing Operational Challenges – Fixing structure, profitability issues, and compliance risks.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- WHY US -->
+      <div class="why-other hykr">
+        <h2 class="other-header">Why Us?</h2>
+        <div class="other-short">
+          <div class="each-other">
+            <img src="assets/svgfiles/682f109b93571d84f5447e26_check_circle.svg" alt="" class="other-travel_image" />
+            <div class="other-tr-copy">End-to-End Startup Support – From brand creation to securing investors, we handle everything.</div>
+          </div>
+          <div class="each-other">
+            <img src="assets/svgfiles/682f109b93571d84f5447e26_check_circle.svg" alt="" class="other-travel_image" />
+            <div class="other-tr-copy">Investor-Ready Documentation – We create polished business plans, pitch decks, financial models, and valuation reports.</div>
+          </div>
+          <div class="each-other">
+            <img src="assets/svgfiles/682f109b93571d84f5447e26_check_circle.svg" alt="" class="other-travel_image" />
+            <div class="other-tr-copy">Regulatory & Legal Compliance – Ensuring startups meet all necessary business registration and data protection laws.</div>
+          </div>
+          <div class="each-other">
+            <img src="assets/svgfiles/682f109b93571d84f5447e26_check_circle.svg" alt="" class="other-travel_image" />
+            <div class="other-tr-copy">Scalability & Profitability Focus – Optimized business structures for sustainable long-term growth.</div>
+          </div>
+          <div class="each-other">
+            <img src="assets/svgfiles/682f109b93571d84f5447e26_check_circle.svg" alt="" class="other-travel_image" />
+            <div class="other-tr-copy">Exclusive Founder Training – Enhancing investor confidence with speech coaching and funding strategies.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Review Section-->
+
+<section id="success" class="review-section section-spacing">
+  <div class="w-layout-blockcontainer container w-container">
+    <div class="section-title text-center">
+      <h2>
+        Feedback from <span class="hykr-span">Satisfied Clients</span>
+      </h2>
+    </div>
+
+    <div class="grid-review">
+      <div class="review-item">
+        <div class="review-content-wrap">
+          <img src="assets/svgfiles/682b8bed5fa45c4c9393ea07_rating.svg" alt="" class="review-star-image" />
+          <p class="review-text">
+            The team helped us with everything—from branding and legal setup to strategic growth planning.
+            We felt supported at every stage. Highly recommend this full-suite service for any serious founder.
+          </p>
+          <h3 class="review-profile-name">Sarah N., Founder, MedTech Pulse</h3>
+        </div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-content-wrap">
+          <img src="assets/svgfiles/682b8bed5fa45c4c9393ea07_rating.svg" alt="" class="review-star-image" />
+          <p class="review-text">
+            From developing our pitch deck to navigating legal compliance, they delivered with unmatched clarity
+            and confidence. The investor relations support especially helped us close our pre-seed round faster.
+          </p>
+          <h3 class="review-profile-name">Arjun K., CEO, EduStream</h3>
+        </div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-content-wrap">
+          <img src="assets/svgfiles/682b8bed5fa45c4c9393e9fd_rating-01.svg" alt="" class="review-star-image" />
+          <p class="review-text">
+            We didn't even know how vulnerable we were until their legal & compliance team jumped in.
+            They reviewed our policies and handled incorporation seamlessly.
+          </p>
+          <h3 class="review-profile-name">Jessica M., Co-founder, GreenNest</h3>
+        </div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-content-wrap">
+          <img src="assets/svgfiles/682b8bed5fa45c4c9393ea07_rating.svg" alt="" class="review-star-image" />
+          <p class="review-text">
+            Most services offer vague advice, but this team built a real operational and risk management model.
+            We scaled from 3 to 20 employees in 6 months thanks to their strategic frameworks.
+          </p>
+          <h3 class="review-profile-name">David R., CTO, AutoFleet AI</h3>
+        </div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-content-wrap">
+          <img src="assets/svgfiles/682b8bed5fa45c4c9393ea07_rating.svg" alt="" class="review-star-image" />
+          <p class="review-text">
+            Their branding team captured our identity perfectly. From the logo to the guidelines,
+            everything was beautifully executed. We get compliments daily.
+          </p>
+          <h3 class="review-profile-name">Fatima A., Creative Director, VibeWear</h3>
+        </div>
+      </div>
+
+      <div class="review-item">
+        <div class="review-content-wrap">
+          <img src="assets/svgfiles/682b8bed5fa45c4c9393ea07_rating.svg" alt="" class="review-star-image" />
+          <p class="review-text">
+            They designed our entire UX, prepared legal docs for our app, and structured our backend strategy.
+            It’s rare to find tech and legal expertise under one roof.
+          </p>
+          <h3 class="review-profile-name">Leo T., Product Lead, NomadPay</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Contactus-->
+<section id="contactus" class="download-section section-spacing remove-up">
+  <div class="container w-container">
+    <div class="section-title text-center" style="max-width: 600px; margin: 0 auto;">
+      <h2 class="download-title" style="margin-bottom: 30px;">Contact Us</h2>
+
+      <form id="contactForm" class="simple-contact-form" style="display: flex; flex-direction: column; gap: 15px; background: rgba(255, 255, 255, 0.15); box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 0 0 0 1px rgba(255, 255, 255, 0.18); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-radius: 15px; padding: 30px 25px; color: #fff;">
+        <input type="text" name="name" placeholder="Your Name" required style="padding: 12px 15px; font-size: 16px; border-radius: 10px; border: none; background: rgba(255, 255, 255, 0.25); color: #c1d8be; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); outline: none; transition: background 0.3s ease;" onfocus="this.style.background='rgba(255,255,255,0.4)'" onblur="this.style.background='rgba(255,255,255,0.25)'">
+        <input type="email" name="email" placeholder="Your Email" required style="padding: 12px 15px; font-size: 16px; border-radius: 10px; border: none; background: rgba(255, 255, 255, 0.25); color: #ffffff; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); outline: none; transition: background 0.3s ease;" onfocus="this.style.background='rgba(255,255,255,0.4)'" onblur="this.style.background='rgba(255,255,255,0.25)'">
+        <textarea name="message" placeholder="Your Message" rows="5" required style="padding: 12px 15px; font-size: 16px; border-radius: 10px; border: none; background: rgba(255, 255, 255, 0.25); color: #ffffff; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); outline: none; resize: vertical; transition: background 0.3s ease;" onfocus="this.style.background='rgba(255,255,255,0.4)'" onblur="this.style.background='rgba(255,255,255,0.25)'"></textarea>
+
+        <div class="checkbox-container">
+          <label class="checkbox-box"><input type="checkbox" name="services[]" value="Branding & Identity">Branding & Identity</label>
+          <label class="checkbox-box"><input type="checkbox" name="services[]" value="Strategic Planning">Strategic Planning</label>
+          <label class="checkbox-box"><input type="checkbox" name="services[]" value="Financial Operations">Financial Operations</label>
+          <label class="checkbox-box"><input type="checkbox" name="services[]" value="Legal & Compliance">Legal & Compliance</label>
+          <label class="checkbox-box"><input type="checkbox" name="services[]" value="Investor Relations">Investor Relations</label>
+          <label class="checkbox-box"><input type="checkbox" name="services[]" value="Risk Management">Risk Management</label>
+          <label class="checkbox-box"><input type="checkbox" name="services[]" value="User Experience & Tech">User Experience & Tech</label>
+          <label class="checkbox-box"><input type="checkbox" name="services[]" value="Strategic Ecosystem">Strategic Ecosystem</label>
+        </div>
+
+        <button type="submit" class="w-button" style="padding: 14px 0; font-size: 18px; font-weight: 600; color: #232121; background: linear-gradient(145deg, #2843c9, #15ae0d); border: none; border-radius: 12px; cursor: pointer; box-shadow: 0 8px 15px rgba(252, 92, 125, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseenter="this.style.transform='scale(1.05)'; this.style.boxShadow='0 12px 25px rgba(252, 92, 125, 0.5)';" onmouseleave="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 15px rgba(252, 92, 125, 0.3)';">Submit</button>
+      </form>
+
+      <!-- Popup -->
+      <div id="successPopup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:rgba(255,255,255,0.95); color:#000; padding:30px 20px; border-radius:12px; box-shadow:0 0 20px rgba(0,0,0,0.3); z-index:9999; max-width:300px; text-align:center;">
+        <strong>Form received successfully!</strong>
+        <p style="margin-top:10px;">Our team will get back to you within 24 hours.</p>
+        <button onclick="document.getElementById('successPopup').style.display='none'" style="margin-top:15px; padding:8px 16px; border:none; border-radius:8px; background:#2843c9; color:white; cursor:pointer;">Close</button>
+      </div>
+
+      
+
+      <!-- AJAX Script -->
+      <script>
+        const form = document.getElementById("contactForm");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const formData = new FormData(form);
+          fetch("submit.php", {
+            method: "POST",
+            body: formData
+          })
+          .then(response => response.text())
+          .then(data => {
+            if (data.trim() === "success") {
+              document.getElementById("successPopup").style.display = "block";
+              form.reset();
+            } else {
+              alert("There was an error. Please try again.");
+            }
+          })
+          .catch(error => {
+            alert("Error submitting form.");
+            console.error(error);
+          });
+        });
+      </script>
+    </div>
+  </div>
+</section>
+
+
+   
+<footer class="footer">
+  <div class="footer-box">
+    <div class="footer-wrapper">
+      <div class="grid-footer">
+         <div class="footer-logo-wrap">
+  <a aria-label="Link" href="index.html" aria-current="page" class="footer-logo-link">
+    <img src="logofooterfull-removebg-preview.png" 
+         loading="lazy" 
+         alt="Company Logo" 
+         class="footer-logo" 
+         style="width: 260px; height: auto;" />
+  </a>
+</div>
+      </div>
+
+        <div class="footer-social_wrapper">
+                                <div class="left-get_it">
+                                    
+                                    <div class="coming-soon-social is-footer">
+                                        <a href="https://x.com/" class="social-icon-wrap is-footer w-inline-block">
+                                            <div class="social-link">
+                                                <img src="assets/svgfiles/682dec033a859fa3cdc2ce8d_devicon_twitter.svg" loading="eager" alt="" class="social-icon"/>
+                                            </div>
+                                        </a>
+                                        <a href="https://web.facebook.com/" class="social-icon-wrap is-footer w-inline-block">
+                                            <div class="social-link">
+                                                <img src="assets/svgfiles/682dec0621169e9f7d240bbb_logos_facebook.svg" loading="eager" alt="" class="social-icon"/>
+                                            </div>
+                                        </a>
+                                        <a href="https://www.instagram.com/" class="social-icon-wrap is-footer w-inline-block">
+                                            <div class="social-link">
+                                                <img src="assets/svgfiles/682dec04ed6194c9d07e221b_skill-icons_instagram.svg" loading="eager" alt="" class="social-icon"/>
+                                            </div>
+                                        </a>
+                                        <a href="https://www.linkedin.com/" class="social-icon-wrap is-footer w-inline-block">
+                                            <div class="social-link">
+                                                <img src="assets/svgfiles/682dec045710c1b38ef9a1d2_logos_linkedin-icon.svg" loading="eager" alt="" class="social-icon"/>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+      <div class="last-footer">
+        <a href="#" class="last-copy">© 2025 The Blueprint</a>
+        <div class="t-c_wrapper">
+          <a href="#" class="last-copy">Privacy Policy</a>
+          <a href="#" class="last-copy">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
